@@ -223,6 +223,21 @@ Although the connectivity test worked immediately, understanding what the comman
 **Learning Outcome:**
 
 I gained a better understanding of how the ping command can be used to test connectivity between devices and external IP addresses.
+### 8.4 Creating and Configuring the GitHub Repository
+
+**Problem:**
+
+Another challenge I faced was creating and configuring the GitHub repository for this project. I had to understand how to create a repository, organize the project files, and prepare the README.md file to document my work properly.
+
+Since I was using an Android phone to manage the repository, some GitHub operations were less familiar to me and required additional attention.
+
+**Solution:**
+
+I took time to learn how to create and configure the repository using GitHub. I also learned how to organize the project documentation and prepare a structure for uploading screenshots separately.
+
+**Learning Outcome:**
+
+This experience helped me become more familiar with GitHub, repository management, Markdown documentation, and organizing project files. It also improved my confidence in using GitHub for future technical projects.
 
 ## 9. Personal Challenges During the Internship
 
@@ -293,10 +308,13 @@ It also increased my confidence in independently creating and configuring a virt
 
 ## 15. Author Information
 
-- **Author:**Ishatse Fleury
+- **Author:** [Your Full Name]
 - **Project:** Cybersecurity Lab Setup
 - **Host Operating System:** Windows
 - **Virtualization Platform:** Oracle VM VirtualBox 7.2.22
 - **Guest Operating System:** Kali Linux
 - **Project Type:** Practical Cybersecurity Laboratory
 
+---
+
+**End of Project Documentation**
