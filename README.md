@@ -67,7 +67,8 @@ The following configuration was used:
 | Adapter Type | Intel PRO/1000 MT Desktop (82540EM) |
 | Network Mode | NAT Network |
 | Network Name | natnetwork |
-
+| Promiscuous Mode | Allow All |
+| Cable Connected | Enabled |
 
 ## 6. Network Configuration
 
@@ -87,6 +88,14 @@ The following IPv4 configuration was used:
 | DNS Server | 10.0.0.1 |
 | IPv6 | Disabled |
 
+### Understanding the Network Configuration
+
+- **IP Address:** Identifies the Kali Linux virtual machine within the network.
+- **Subnet Prefix (/24):** Defines the network portion of the IPv4 address.
+- **Default Gateway:** Provides a route for communication with networks outside the local network.
+- **DNS Server:** Resolves domain names into IP addresses.
+- **NAT Network:** Allows virtual machines to access external networks through the host's network connection.
+
 ## 7. Laboratory Setup and Implementation
 
 ### 7.1 VirtualBox Network Adapter Configuration
@@ -100,12 +109,22 @@ The adapter was configured with the following settings:
 - Attached to: NAT Network
 - Name: natnetwork
 - Adapter Type: Intel PRO/1000 MT Desktop (82540EM)
+- Promiscuous Mode: Allow All
+- Cable Connected: Enabled
+
+**Screenshot: VirtualBox Network Adapter Configuration**
+
+![VirtualBox Network Adapter](screenshots/01-virtualbox-kali-network-adapter.jpg)
 
 ### 7.2 Starting Kali Linux
 
 After configuring the virtual network adapter, the Kali Linux virtual machine was started successfully.
 
 The Kali Linux desktop environment was displayed, confirming that the virtual machine was running.
+
+**Screenshot: Kali Linux Desktop**
+
+![Kali Linux Desktop](screenshots/02-kali-linux-desktop.jpg)
 
 ### 7.3 Manual IPv4 Configuration
 
@@ -120,6 +139,9 @@ The following values were entered:
 
 These settings allowed the Kali Linux virtual machine to communicate through the configured virtual network.
 
+**Screenshot: Manual IPv4 Configuration**
+
+![Kali IPv4 Configuration](screenshots/03-kali-ipv4-manual-configuration.jpg)
 
 ### 7.4 Configuring the VirtualBox NAT Network
 
@@ -132,6 +154,9 @@ The VirtualBox NAT Network manager was configured with the following settings:
 
 This network configuration provided the virtual machine with a network environment for connectivity testing.
 
+**Screenshot: VirtualBox NAT Network Configuration**
+
+![NAT Network Configuration](screenshots/04-virtualbox-nat-network-configuration.jpg)
 
 ### 7.5 Testing Network Connectivity
 
@@ -147,7 +172,9 @@ The terminal displayed successful replies from the destination IP address.
 
 This confirmed that the Kali Linux virtual machine could communicate with the external IP address during the test.
 
+**Screenshot: Ping Connectivity Test**
 
+![Ping Test](screenshots/05-internet-connectivity-ping-test.jpg)
 
 ### 7.6 Testing Internet Access Using Firefox
 
@@ -155,6 +182,9 @@ Finally, Firefox was opened inside Kali Linux.
 
 Google was accessed successfully, demonstrating that web access was available from the virtual machine.
 
+**Screenshot: Firefox Web Access**
+
+![Firefox Web Access](screenshots/06-firefox-web-access-test.jpg)
 
 ## 8. Problems Encountered and Solutions
 
@@ -180,7 +210,7 @@ Initially, I went to File Explorer to locate the Kali Linux virtual machine file
 
 I eventually used the Import option in Oracle VM VirtualBox and was able to locate and import the Kali Linux virtual machine successfully.
 
-
+I do not remember the exact file-navigation steps, but the import process was successful.
 
 ### 8.3 Understanding the Ping Command
 
@@ -241,6 +271,11 @@ I now have a better understanding of the steps involved in configuring a virtual
 
 This experience has also increased my interest in learning more about networking and cybersecurity.
 
+## 13. Security and Ethical Considerations
+
+This laboratory environment is intended for educational purposes and authorized cybersecurity practice.
+
+All cybersecurity experiments, network scans, and penetration testing activities must be performed only on systems that I own or have explicit permission to test.
 
 ## 14. Conclusion
 
